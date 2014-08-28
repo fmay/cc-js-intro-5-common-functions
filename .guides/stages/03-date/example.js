@@ -12,7 +12,7 @@ function display(message) {
 function play() {
  
   // STRING
-  document.write("ARRAY FUNCTIONS<br/>");
+  document.write("JUST A FEW DATE FUNCTIONS<br/>");
 
   // A date variable or two
   var myDate = new Date();
@@ -23,5 +23,10 @@ function play() {
   // Get the day of the week
   display ("Christmas day 2012 fell on weekday number "  + specificDate.getDay());
   display ("Year part of the date : " + specificDate.getFullYear());
+  
+  // Get the date in GMT
+  display ("Current date/time GMT is " + myDate.toGMTString());
+  
+  
   
 }

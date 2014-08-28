@@ -3,9 +3,11 @@
 
 	// Run button configuration
   "commands": {
-    "Variables": "~/workspace/.guides/restore.sh 01-variables",
-    "Play": "~/workspace/.guides/restore.sh 02-varplay"
-    
+    "Math": "~/workspace/.guides/restore.sh 01-math",
+    "Strings": "~/workspace/.guides/restore.sh 02-string",
+    "Dates": "~/workspace/.guides/restore.sh 03-date",  
+    "Arrays": "~/workspace/.guides/restore.sh 04-array",  
+    "Other": "~/workspace/.guides/restore.sh 05-other"
   },
   
 	// Preview button configuration
