@@ -9,19 +9,38 @@ function display(message) {
   document.write("<br/>" + message);
 }
 
+// Don't worry about this function !!!
+function htmlEncode(str) {
+    return str.replace(/[&<>"']/g, function($0) {
+        return "&" + {"&":"amp", "<":"lt", ">":"gt", '"':"quot", "'":"#39"}[$0] + ";";
+    });
+}
+
 function play() {
  
-  // STRING
-  document.write("ARRAY FUNCTIONS<br/>");
+  // API EXAMPLES
+  display("API EXAMPLES");  
 
-  // A date variable or two
-  var myDate = new Date();
-  display("Current Date and Time : " + myDate);
-  var specificDate = new Date(2012, 12, 25);
-  display("Hard-coded date : " + specificDate);
+	// WINDOW
+  display("<br/>WINDOW");
 
-  // Get the day of the week
-  display ("Christmas day 2012 fell on weekday number "  + specificDate.getDay());
-  display ("Year part of the date : " + specificDate.getFullYear());
+  // Browser information
+  var brWidth = window.innerWidth;
+  var brHeight = window.innerHeight;
+  display("Browser internal dimensions : Width=" + brWidth + " Height=" + brHeight );
   
+  // Get the current URL
+  display( "Current URL: " + window.location);
+  display("");
+  display("Title: " + document.title);
+  display("");
+  
+  var htmlElement = document.getElementById("myDiv");
+  display("--------------------------");
+  display("HTML of 'myDiv'..." + htmlElement.innerHTML);
+  display("End of myDiv HTML");
+  display("--------------------------");
+
+  display("<br/>Or in raw format ...");
+	display(htmlEncode(htmlElement.innerHTML));
 }
