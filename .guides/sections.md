@@ -2,7 +2,7 @@
 title: SOME STANDARD JAVASCRIPT FUNCTIONS
 files: []
 editable: false
-layout: ""
+layout: 2-panels-tree
 
 ---
 Javascript comes with a large number of standard *libraries* that provide a colossal amount of useful functionality without you having to write your own code.
