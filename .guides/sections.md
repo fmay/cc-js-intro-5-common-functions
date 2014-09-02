@@ -12,7 +12,7 @@ As we get deeper into what *functions* and *objects* are, we will make proper se
 Here a a few of the really useful standard libraries
 
 - 'Math' -  mathematical tools for working with constants (PI, Log10, e etc.), trigonometry, random numbers, rounding, ranges and more
-- 'String' - do almost anything with string variables, such as transforming to uppercase or lowercase, extracting parts of a string, trimming epty spaces and much more
+- 'String' - do almost anything with string variables, such as transforming to uppercase or lowercase, extracting parts of a string, trimming empty spaces and much more
 - 'Date' - manipulate dates, convert date variables into string (and back), getting the current date, getting component parts of a date and much more
 - 'Array' - a whole set of functions for operating on Javascript arrays
 - There are more, but these are the most useful ones
@@ -91,33 +91,34 @@ editable: false
 layout: ""
 
 ---
->Select 'APIs' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>Select 'Other' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
 
 "API" is an excellent geeky acronym and one that you will see a lot. It stands for *A*pplication *P*rogrammer *I*nterface.
 
 An API is a way for you, someone writing your own code, to access someone else's code without being being able to see all the gory details of their code.
 
-##
-Let's try a food analogy
-ou are hungry and you want to eat. You decide you fancy Pizza. You now have 2 choices 
+
+Let's try a food analogy.
+
+You are hungry and you want to eat. You decide you fancy Pizza. You now have 2 choices 
 
 1. Cook it yourself (from scratch, not frozen)
 1. Order one in
 
-To cook it yourself from scratch (making your own dough, your own sauce, getting the inredients together) is a non-trivial process requiring a lot of time and skill. And - will the pizza you make taste a whole lot better than a fresh, restaurant delivered pizza?
+To cook it yourself from scratch (making your own dough, your own sauce, getting the inredients together) is a non-trivial process requiring a lot of time and skill. And, will the pizza you make taste a whole lot better than a fresh, restaurant delivered pizza?
 
-The same thing holds true for coding. Let's say you want to build some Map functionality into your app. You could write a mapping applciation from scratch (it would only take many years), or you could use Google Maps.
+The same thing holds true for coding. Let's say you want to build some Map functionality into your app. You could write a mapping application from scratch (it would only take many years), or you could use Google Maps.
 
 So, Google have done all the hard work and assembled a beautiful mapping system. What they provide to us is an API. It allows external programmers to access their program using an interface, whose specification is published. 
 
-There are thousands of these APIs at your disposal and all you need is to read the documention to see how to use them.There
+There are thousands of these APIs at your disposal and all you need is to read the documention to see how to use them.
 
 There are 3 general types of API that are worth discussing at this point
 
 1. APIs provided by Javascript (we've looked at a couple of these in this module)
-1. APIs provided to you by the Browser (screen info, gelocation coordinates, battery levels and a **lot** more; if you need it, the chances are the browser can provide it)
+1. APIs provided to you by the Browser (screen info, geolocation coordinates, battery levels and a **lot** more; if you need it, the chances are the browser can provide it)
 1. APIs provided to you on the Web (Google Maps is a great example)
-1. APIs provided by Libraries that you can download (Open Source is a great source if libraries) and install within your project
+1. APIs provided by Libraries that you can download (Open Source is a great source of libraries) and install within your project
 
 ---
 title: Sample Code Explained
@@ -155,6 +156,9 @@ Looking at the sample code, here is what we are doing.
   display("HTML of 'myDiv'..." + htmlElement.innerHTML);
   display("End of myDiv HTML");
   display("--------------------------");
+  
+  display("<br/>Or in raw format ...");
+  display(htmlEncode(htmlElement.innerHTML));
 ```
 
 ##var brWidth = window.innerWidth;

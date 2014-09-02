@@ -9,38 +9,28 @@ function display(message) {
   document.write("<br/>" + message);
 }
 
-// Don't worry about this function !!!
-function htmlEncode(str) {
-    return str.replace(/[&<>"']/g, function($0) {
-        return "&" + {"&":"amp", "<":"lt", ">":"gt", '"':"quot", "'":"#39"}[$0] + ";";
-    });
-}
-
 function play() {
  
-  // API EXAMPLES
-  display("API EXAMPLES");  
-
-	// WINDOW
-  display("<br/>WINDOW");
-
-  // Browser information
-  var brWidth = window.innerWidth;
-  var brHeight = window.innerHeight;
-  display("Browser internal dimensions : Width=" + brWidth + " Height=" + brHeight );
+  // MATH
+  document.write("MATH<br/><br/>");
   
-  // Get the current URL
-  display( "Current URL: " + window.location);
-  display("");
-  display("Title: " + document.title);
-  display("");
+  // Show some math constants
+  display( "PI=" + Math.PI );
+  display( "Square root of 2=" + Math.SQRT2 );
   
-  var htmlElement = document.getElementById("myDiv");
-  display("--------------------------");
-  display("HTML of 'myDiv'..." + htmlElement.innerHTML);
-  display("End of myDiv HTML");
-  display("--------------------------");
+  // Some trigonometry
+  var radians, degrees=60;
+  var degreesToRadians=Math.PI/180;
+	radians = degrees*degreesToRadians;
+  display ( "Cosine(" + degrees + ")=" + Math.cos(radians) );
 
-  display("<br/>Or in raw format ...");
-	display(htmlEncode(htmlElement.innerHTML));
+  // Rounding floating point numbers
+  var floatX = "3.141";
+  display ( floatX + " when rounded is " + Math.round(floatX) );
+  
+  // Generating a random number between one and a hundred (Math.Random always yields a number between 0 and 1)
+  display( "Here's a random number : " + Math.random() * 100);
+  
+  
+  
 }
