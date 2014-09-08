@@ -23,7 +23,7 @@ The left most panel is the File Tree **(1)**. This is where your project's files
 #About the Codio Guide
 The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
 
-- if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
+- if you ever close the Guide tab by mistake, simply open it from the View menu **(3)**.
 - you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
 - you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
 
@@ -50,7 +50,7 @@ Javascript comes with a large number of standard *libraries* that provide a colo
 
 As we get deeper into what *functions* and *objects* are, we will make proper sense of the more advanced ones. In the meantime, we'll look at the ones that will be really helpful to us at this stage.
 
-Here a a few of the really useful standard libraries
+Here are a few of the really useful standard libraries
 
 - 'Math' -  mathematical tools for working with constants (PI, Log10, e etc.), trigonometry, random numbers, rounding, ranges and more
 - 'String' - do almost anything with string variables, such as transforming to uppercase or lowercase, extracting parts of a string, trimming empty spaces and much more
@@ -69,7 +69,7 @@ layout: ""
 ---
 >Select 'Math' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
 
-The Javascript Math library has all sorts of Goodies to play with. 
+The Javascript Math library has all sorts of goodies to play with. 
 
 The best thing is to refer to the [Mozilla Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math).
 
