@@ -5,6 +5,47 @@ editable: false
 layout: 2-panels-tree
 
 ---
+#'Forking' this module
+If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
+
+To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
+
+#A few words about the Codio Guide
+Before we start with this module here are a few pointers about using this Codio Guide.
+
+If you've already read this in another Guide then skip to the next section.
+
+![](.guides/img/guides-helper.jpg)
+
+#The File Tree
+The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
+
+#About the Codio Guide
+The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
+
+- if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
+- you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
+- you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
+
+#The Rocket Menu
+The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
+
+You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
+
+#Previewing
+The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
+
+#Code Tabs
+When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
+
+
+---
+title: Introduction
+files: []
+editable: false
+layout: ""
+
+---
 Javascript comes with a large number of standard *libraries* that provide a colossal amount of useful functionality without you having to write your own code.
 
 As we get deeper into what *functions* and *objects* are, we will make proper sense of the more advanced ones. In the meantime, we'll look at the ones that will be really helpful to us at this stage.
@@ -21,12 +62,16 @@ We'll take a look at each of these, with source code available to play with.
 
 ---
 title: Math Functions
-files: []
-editable: false
+files:
+  - path: example.js
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
->Select 'Math' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>The code for 'Math' module is already loaded in your project. If you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Math'. 
+
 
 The Javascript Math library has all sorts of Goodies to play with. 
 
@@ -38,12 +83,18 @@ Now go and play with the code and hack it about a bit.
 
 ---
 title: String Functions
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 02-string, example.js"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
->Select 'Strings' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Strings'.
 
 The Javascript String library has pretty well everything you need to manipulate, slice and dice strings. 
 
@@ -55,12 +106,18 @@ Now go and play with the code and hack it about a bit.
 
 ---
 title: Date Functions
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 03-date, example.js"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
->Select 'Dates' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Dates'. 
 
 Dates have their own variable type in Javascript, which we don't really need to go into at this point.
 
@@ -70,12 +127,18 @@ To see the full range of things on offer, refer to the [Mozilla Reference](https
 
 ---
 title: Array Functions
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh 04-array, example.js"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
->Select 'Arrays' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Arrays'. 
 
 We have already had a module on arrays and seen a couple of array functions, like `pop()`, `push()` and `shift()`.
 
@@ -86,12 +149,18 @@ Be sure to look at the available methods. You don't need to use them but read th
 To see the full range of things on offer, refer to the [Mozilla Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 ---
 title: The Wonderful World of APIs
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    ref: ""
+  - path: " #cmd: bash .guides/restore.sh 05-other, example.js"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
->Select 'Other' from the ![](.guides/img/rocket.png) Rocket menu at the top to load some code or restore it if you mess it up.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Other'. 
 
 "API" is an excellent geeky acronym and one that you will see a lot. It stands for *A*pplication *P*rogrammer *I*nterface.
 
@@ -122,13 +191,15 @@ There are 3 general types of API that are worth discussing at this point
 
 ---
 title: Sample Code Explained
-files: []
-editable: false
+files:
+  - path: example.js
+    action: open
+    ref: " // Browser information"
+    lineCount: 19
+editable: true
 layout: ""
 
 ---
-Assuming you have loaded the 'APIs' code from the ![](.guides/img/rocket.png) Rocket menu at the top, we'll now explain some of the simple API functions we show there.
-
 We are only going to show a few very simple API calls here. In the next module, though, we are going to have some fun with Google Maps and look at how we can use a couple of different APIs to do some much more enjoyable stuff.
 
 ##Full Set of Browser APIs
