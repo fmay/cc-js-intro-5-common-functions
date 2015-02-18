@@ -1,48 +1,46 @@
 ---
 title: SOME STANDARD JAVASCRIPT FUNCTIONS
 files: []
-editable: false
 layout: 2-panels-tree
 
 ---
-#'Forking' this module
+# 'Forking' this module
 If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
 
 To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
 
-#A few words about the Codio Guide
+# A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
 
 If you've already read this in another Guide then skip to the next section.
 
 ![](.guides/img/guides-helper.jpg)
 
-#The File Tree
+# The File Tree
 The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
 
-#About the Codio Guide
+# About the Codio Guide
 The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
 
 - if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
 - you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
 - you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
 
-#The Rocket Menu
+# The Rocket Menu
 The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
 
 You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
 
-#Previewing
+# Previewing
 The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
 
-#Code Tabs
+# Code Tabs
 When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
 
 
 ---
 title: Introduction
 files: []
-editable: false
 layout: ""
 
 ---
@@ -66,7 +64,6 @@ files:
   - path: example.js
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -90,7 +87,6 @@ files:
   - path: "#cmd: bash .guides/restore.sh 02-string, example.js"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -113,7 +109,6 @@ files:
   - path: "#cmd: bash .guides/restore.sh 03-date, example.js"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -134,7 +129,6 @@ files:
   - path: "#cmd: bash .guides/restore.sh 04-array, example.js"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -156,7 +150,6 @@ files:
   - path: " #cmd: bash .guides/restore.sh 05-other, example.js"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -196,18 +189,17 @@ files:
     action: open
     ref: " // Browser information"
     lineCount: 19
-editable: true
 layout: ""
 
 ---
 We are only going to show a few very simple API calls here. In the next module, though, we are going to have some fun with Google Maps and look at how we can use a couple of different APIs to do some much more enjoyable stuff.
 
-##Full Set of Browser APIs
+## Full Set of Browser APIs
 If you would like to see just how many APIs are offered by the browser, [take a look here](https://developer.mozilla.org/en-US/docs/Web/API).
 
 It's a pretty scary list! However, you will only need one or two of these for simple applications. Nevertheless, it's good to know that there is an API available for almost anything you can imagine.
 
-##Sample Code
+## Sample Code
 Looking at the sample code, here is what we are doing.
 
 ```
@@ -232,17 +224,17 @@ Looking at the sample code, here is what we are doing.
   display(htmlEncode(htmlElement.innerHTML));
 ```
 
-##var brWidth = window.innerWidth;
+## var brWidth = window.innerWidth;
 Here we can see something we have not discussed before, namely the `.` character between two variable names.
 
 `window` is the window API. It is actually a variable *of type object*. In the next module we will introduce you to objects, but for now, you can think it as being a variable that contains other variables.
 
 In our example, we have object variables `innerHeight` and `innerWidth` that are made available to us.
 
-##window.location
+## window.location
 This is exactly the same approach. The browser tells us url of the currently displayed page.
 
-##var htmlElement = document.getElementById("myDiv")
+## var htmlElement = document.getElementById("myDiv")
 This is somewhat different. We are using the `document` object, which gives us information about the HTML structure of the current page.
 
 `getElementById("myDiv")` is a `document` function that gives us a special object variable back, containing everything we might want to know about `myDiv`, a <div> we placed in our `index.html` file.
